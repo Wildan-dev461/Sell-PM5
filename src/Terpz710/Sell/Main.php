@@ -8,6 +8,8 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\utils\Config;
 
 use Terpz710\Sell\Commands\SellCommand;
+use Terpz710\Sell\Commands\SellInventoryCommand;
+use Terpz710\Sell\Commands\SellAllCommand;
 use Terpz710\Sell\Economy\EconomyManager;
 
 class Main extends PluginBase {
