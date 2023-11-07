@@ -3,9 +3,15 @@ version: 1.0.3-BETA
 author: Terpz710
 api: 5.0.0
 main: Terpz710\Sell\Main
-description: Simple sell. Sell, SellAll ect.
+description: Simple Sell Plugin.
 
 permissions:
   sell.sell:
     description: Allows the player to sell their items specified through items.yml
+    default: true
+  sell.sellinventory:
+    description: Allows the player to sell all items in their inventory
+    default: true
+  sell.sellall:
+    description: Allows the player to sell all items of the same type in their inventory
     default: true
