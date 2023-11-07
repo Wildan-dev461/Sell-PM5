@@ -17,6 +17,10 @@ class Main extends PluginBase {
 
         $economyManager = new EconomyManager($this);
 
-        $this->getServer()->getCommandMap()->register("sell", new SellCommand($this, $economyManager));
+        $this->getServer()->getCommandMap()->register("sell", new SellCommand($this));
+
+        $this->getServer()->getCommandMap()->register("sellinventory", new SellInventoryCommand($this));
+
+        $this->getServer()->getCommandMap()->register("sellall", new SellAllCommand($this));
     }
 }
